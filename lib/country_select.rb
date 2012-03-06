@@ -26,7 +26,7 @@ module ActionView
           selected=nil if priority_countries.include?(selected)
         end
 
-        return country_options + options_for_select(COUNTRIES.collect {|c| [c[:name], c[:name], {'data-alternative-spellings' => c[:alternatives], 'data-relevancy-booster' => c[:relevancy_booster]}]}, selected)
+        return (country_options + options_for_select(COUNTRIES.collect {|c| [c[:name], c[:name], {'data-alternative-spellings' => c[:alternatives], 'data-relevancy-booster' => c[:relevancy_booster]}]}, selected)).html_safe
       end
       # All the countries included in the country_options output.
       COUNTRIES =  [{name: "Afghanistan", alternatives: "AF افغانستان"},
