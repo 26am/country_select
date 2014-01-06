@@ -76,7 +76,7 @@ module ActionView
                    ::CountrySelect::COUNTRIES_FOR_SELECT
                  end
 
-        return country_options + options_for_select(values.sort, selected)
+        return country_options + options_for_select(values.collect {|c| [c[:name], c[:name], {'data-alternative-spellings' => c[:alternatives], 'data-relevancy-booster' => c[:relevancy_booster]}]}, selected)
       end
 
       # All the countries included in the country_options output.
