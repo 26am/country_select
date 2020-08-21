@@ -228,7 +228,7 @@ module CountrySelect
                   {name: "Sweden", alternatives: "SE Sverige", relevancy_booster: "1.5"},
                   {name: "Switzerland", alternatives: "CH Swiss Confederation Schweiz Suisse Svizzera Svizra", relevancy_booster: "1.5"},
                   {name: "Syrian Arab Republic", alternatives: "SY Syria سورية"},
-                  {name: "Taiwan, Province of China", alternatives: "TW 台灣 臺灣"},
+                  {name: "Taiwan", alternatives: "TW 台灣 臺灣"},
                   {name: "Tajikistan", alternatives: "TJ Тоҷикистон Toçikiston"},
                   {name: "Tanzania, United Republic of", alternatives: "TZ"},
                   {name: "Thailand", alternatives: "TH ประเทศไทย Prathet Thai"},
